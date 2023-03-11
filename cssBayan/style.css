@@ -1,0 +1,184 @@
+html {
+    background-color: rgb(245, 245, 236);
+    font-family: "Gill Sans", sans-serif;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form__main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+    color: black;
+}
+
+.line{
+    border-bottom: solid grey;
+}
+
+.line,
+.content {
+}
+
+.bayan-blocks:hover label div div {
+    color: black;
+}
+
+.bayan-blocks:hover label div .plus {
+    display: flex;
+}
+
+.bayan__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: blue;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.plus {
+    background-image: url("images/plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+    transition: transform 0.5s ease-in-out;
+    display: none;
+}
+
+.label-wrapper .content {
+    color: blue;
+}
+
+input:checked {
+    color: black;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    width: 0;
+}
+
+label:active .label-wrapper .content {
+    color: blue;
+}
+
+
+
+input[type="radio"]:checked+label .content {
+    color: rgb(0, 0, 0);
+}
+
+input[type="radio"]:checked+label .label-wrapper .content .plus {
+    transform: rotateY(0deg) rotate(45deg);
+}
+
+label:hover .label-wrapper .content .plus {
+    transform: rotateY(0deg) rotate(45deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.pic {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    transition: all 1s ease;
+    opacity: 0;
+    width: 0;
+}
+
+label:hover .pic {
+    opacity: 1;
+    width: 50%;
+}
+
+input[type="radio"]:checked+label .label-wrapper .pic {
+    width: 50%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1919px) and (min-width: 820px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .content {
+        font-size: 2rem;
+    }
+
+    label:hover .pic {
+        width: 40%;
+    }
+
+    .plus {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 819px) and (min-width: 321px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+
+    label:hover .pic {
+        width: 30%;
+    }
+
+    .plus {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    label:hover .pic {
+        width: 20%;
+    }
+
+    .plus {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (hover: hover) {
+    h1,
+    .lines,
+    .content,
+    .label-wrapper,
+    .form-wrapper:hover {
+        cursor: pointer;
+    }
+
+    .pic:active {
+        cursor: grabbing;
+    }
+}
