@@ -8,7 +8,7 @@ html {
     margin: 0 auto;
 }
 
-.form__main {
+.main__container {
     width: 80%;
     margin: 0 auto;
 }
@@ -26,11 +26,11 @@ h1 {
 .content {
 }
 
-.bayan-blocks:hover label div div {
+.bayan__blocks:hover label div div {
     color: black;
 }
 
-.bayan-blocks:hover label div .plus {
+.bayan__blocks:hover label div .plus {
     display: flex;
 }
 
@@ -111,6 +111,8 @@ input[type="radio"]:checked+label .label-wrapper .pic {
     width: 50%;
     opacity: 1;
 }
+
+
 
 @media screen and (max-width: 1919px) and (min-width: 820px) {
     h1 {
