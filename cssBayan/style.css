@@ -65,6 +65,10 @@ h1 {
     color: blue;
 }
 
+.label-wrapper:active{
+    opacity: 0.7;
+}
+
 input:checked {
     color: black;
 }
@@ -77,6 +81,7 @@ input[type="radio"] {
 label:active .label-wrapper .content {
     color: blue;
 }
+
 
 
 
